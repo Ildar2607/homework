@@ -1,25 +1,28 @@
 @charset "UTF-8";
 body {
   font-family: sans-serif;
+}
+
+img {
   max-width: 100%;
 }
 
 .container {
-  max-width: 1170px;
+  width: 1171px;
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 @media (max-width: 1200px) {
   .container {
-    width: 300px;
+    max-width: 1171px;
+    width: 95%;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .container {
-    width: 300px;
+    max-width: 1171px;
+    width: 95%;
   }
 }
 
@@ -30,9 +33,9 @@ body {
   padding: 18px 30px;
 }
 
-/* Импорт ситилей шапки*/
+/*Импорт стилей шапки*/
 .navbar {
-  padding: 8px;
+  padding: 8px 0;
 }
 
 .navbar-block {
@@ -78,90 +81,7 @@ body {
   }
 }
 
-/* Стили для главного экрана*/
+/*Стили для главного экрана*/
 .hero {
   padding: 50px 0;
-}
-
-.hero-block {
-  display: flex;
-}
-
-.hero-text {
-  flex-basis: 40%;
-  padding-right: 120px;
-}
-
-.hero-text__title {
-  display: inline-block;
-  font-size: 41px;
-  font-weight: 800;
-  line-height: 55px;
-  margin-bottom: 50px;
-}
-
-.hero-text__subtitle {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 69px;
-}
-
-.hero-list {
-  margin: 0;
-  padding: 0;
-}
-
-.hero-list__item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.hero-list__image {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #ffd200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin-right: 30px;
-}
-
-.hero-list__text {
-  max-width: 300px;
-}
-
-.hero-image {
-  width: 570px;
-  height: 488px;
-  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
-}
-
-@media (max-width: 1200px) {
-  .hero-block {
-    flex-direction: column;
-  }
-  .hero-list {
-    margin-bottom: 44px;
-  }
-  .hero-text {
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-text__title {
-    font-size: 24px;
-    line-height: 1.4;
-    margin-bottom: 15px;
-  }
-  .hero-text__subtitle {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  .hero-list__text {
-    font-size: 12px;
-  }
 }
