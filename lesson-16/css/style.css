@@ -61,7 +61,7 @@ img {
 }
 
 .section {
-  padding-top: 84px;
+  padding-top: 77px;
   padding-bottom: 92px;
 }
 
@@ -160,7 +160,8 @@ img {
 /*Стили для главного экрана*/
 .hero {
   background-color: #f5f5f5;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 0;
 }
 
 .hero-block {
@@ -173,6 +174,7 @@ img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-right: 0px;
+  padding-bottom: 94px;
 }
 
 .hero-text__title {
@@ -300,6 +302,11 @@ img {
 }
 
 /*Стили для блока offer*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .offer {
   background: url("../img/offer/offer-bg.png") no-repeat;
   background-position: center right;
@@ -326,7 +333,9 @@ img {
 .offer__title {
   max-width: 360px;
   line-height: 35px;
-  margin-bottom: 22px;
+  margin-top: 0;
+  margin-bottom: 21px;
+  padding: none;
 }
 
 .offer__subtitle {
