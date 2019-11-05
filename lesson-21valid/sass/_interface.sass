@@ -1,0 +1,72 @@
+*
+  box-sizing: border-box
+body
+  +reg
+h1, h2, h3, h4, p, ul, li, hr 
+  padding: 0
+  margin: 0
+img
+  max-width: 100%
+.container
+  width: 1171px
+  margin: auto
+  padding-right: 0
+  padding-left: 0
+em.invalid
+  display: block
+  color: red
+  position: absolute
+  margin-top: -55px
+  margin-left: 180px
+div.invalid
+  display: block
+  color: red
+  position: absolute
+  margin-top: -90px
+  margin-left: 50px
+@media (max-width: 1200px)
+  .container
+    width: 768px
+  em.invalid
+    display: block
+    color: red
+    position: absolute
+    margin-top: -55px
+    margin-left: 180px
+  div.invalid
+    width: 494
+    display: block
+    color: red
+    position: absolute
+    margin-top: -70px
+    margin-left: 80px
+@media (max-width: 768px)
+  .container
+    max-width: 580px
+    width: 90%
+.button
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  padding: 18px 30px
+  outline: none
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px
+  outline: none
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
+@media (max-width: 567px) 
+  .container
+    max-width: 580px
+  
+   
+
+ 
